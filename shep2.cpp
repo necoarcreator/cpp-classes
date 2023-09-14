@@ -9,29 +9,29 @@ int thrd(void);
 int frth(void);
 int ffth(void);
 int sxth(void);
+int svth(void);
 
-class Point
+struct Mass
 {
-public:
-    Point()
-    {
-    }
-    Point(int, int, int, int, int)
-    {
-    }
+    int number;
+
 };
 
 int main(void)
 { 
-    first();
+    //first();
     
-    sec();
+    //sec();
+    
+    //frth();
 
-    thrd();
+    svth();
 
-    printf("почему-то сразу 4 функции не запусккаются");
+    //thrd();
 
-    sxth();
+    //printf("почему-то сразу 4 функции не запусккаются");
+
+    //sxth();
 
     return 0;
 }
@@ -56,7 +56,7 @@ int sec(void)
     p = (int*)malloc(sizeof(int));
     printf("Enter the number of elements: ");
     // 'scanf' is deprecated: This function or variable may be unsafe. Consider using scanf_s instead. //
-    scanf_s("%d", &n);
+    scanf("%d", &n);
     if (p == NULL)
     {
         printf("process executed with flag 1");
@@ -80,19 +80,18 @@ int thrd(void)
     }
 }
 
-//int frth(void)
-//{   //тут не особо что-то получилось. было переполнение данных, хотя задать что-то классом звучало заманчиво...
-    //Point m[5] = {
-    //    Point(0, 1, 2, 3, 4)
-    //};
+int frth(void)
+{
+    Mass m[5];
 
-    //int i;
-    //for (i = 0; i < 5; i++)
-    //{
-    //    printf("m[%1d] = %2d\n", i, m[i]);
-    //}
+    int i;
+    for (i = 0; i < 5; i++)
+    {
+        m[i].number = i;
+        printf("m[%1d] = %2d\n", i, m[i]);
+    }
 
-//}
+}
 
 int ffth(void)
 {   
@@ -135,6 +134,32 @@ int sxth(void)
 
     }
     free(p);
+}
+
+int svth(void)
+{
+
+
+
+    std::cout << "Enter a positive integer: ";
+    int length;
+    std::cin >> length;
+
+    int* array = new int[length]; // используем оператор new[] для выделения массива. Обратите внимание, переменная length не обязательно должна быть константой!
+
+    std::cout << "I just allocated an array of integers of length " << length << '\n';
+
+    int i;
+
+    for (i = 0; i < length; i++) {
+        array[i] = i;
+        printf("array[%1d] = %2d\n", i, array[i]);
+    }
+
+    delete[] array; // используем оператор delete[] для освобождения выделенной массиву памяти
+    array = 0; // используйте nullptr вместо 0 в C++11
+
+    return 0;
 }
     
 //a[n]//
