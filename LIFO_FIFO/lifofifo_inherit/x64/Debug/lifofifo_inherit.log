@@ -1,0 +1,6 @@
+﻿  Queue.cpp
+  Stack.cpp
+C:\Work\cpp_projects\lifofifo_inherit\Stack.cpp(12,47): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+  lifofifo_inherit.cpp
+  Создание кода...
+  lifofifo_inherit.vcxproj -> C:\Work\cpp_projects\lifofifo_inherit\x64\Debug\lifofifo_inherit.exe
