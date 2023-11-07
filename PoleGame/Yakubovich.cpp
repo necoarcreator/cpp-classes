@@ -67,7 +67,7 @@ char Yakubovich::getLetter()
 
     int code = static_cast<int>(buk);
 
-    if ((code < 65) || (code > 90) && (code < 97) || (code > 122))
+    if (((code < 65) || (code > 90)) && ((code < 97) || (code > 122)))
     {
         cout << "Don't insert non-alphabetic symbols!" << endl;
         getLetter();
