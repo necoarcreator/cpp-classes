@@ -1,0 +1,3 @@
+﻿  Stack.cpp
+C:\Work\cpp_projects\lifofifo_template\Stack.cpp(42,47): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+  lifofifo_template.vcxproj -> C:\Work\cpp_projects\lifofifo_template\x64\Debug\lifofifo_template.exe
