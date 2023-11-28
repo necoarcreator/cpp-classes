@@ -1,0 +1,2 @@
+C:\Work\cpp_projects\lifofifo_abstract\x64\Debug\lifofifo_abstract.exe
+C:\Work\cpp_projects\LIFO_FIFO\lifofifo_abstract\x64\Debug\lifofifo_abstract.exe

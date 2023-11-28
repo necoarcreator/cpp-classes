@@ -1,0 +1,7 @@
+﻿  Datastruct.cpp
+C:\Work\cpp_projects\LIFO_FIFO\lifofifo_abstract\Datastruct.cpp(7,57): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+  lifofifo_abstract.cpp
+  Queue.cpp
+  Stack.cpp
+  Создание кода...
+  lifofifo_abstract.vcxproj -> C:\Work\cpp_projects\LIFO_FIFO\lifofifo_abstract\x64\Debug\lifofifo_abstract.exe

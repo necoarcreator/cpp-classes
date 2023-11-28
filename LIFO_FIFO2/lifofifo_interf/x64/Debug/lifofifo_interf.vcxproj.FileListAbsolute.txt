@@ -1,0 +1,2 @@
+C:\Work\cpp_projects\lifofifo_interf\x64\Debug\lifofifo_interf.exe
+C:\Work\cpp_projects\LIFO_FIFO2\lifofifo_interf\x64\Debug\lifofifo_interf.exe
