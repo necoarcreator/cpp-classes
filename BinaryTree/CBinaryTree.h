@@ -8,12 +8,14 @@ using namespace std;
 template <class T>
 
 class CBinaryTree {
-	
-	
+
+
 
 public:
 	Node<T>* root;
-	Node<T> *srchKnot;
+	Node<T>* srchKnot;
+	Node<T>** childKnot;
+	Node<T>** fatherKnot;
 
 	CBinaryTree();
 	CBinaryTree(T num);
@@ -21,14 +23,7 @@ public:
 	T delKnot(T num);
 	T SrchPlc(T num);
 	Node<T>* getroot();
-	void print(Node<T> *root);
-
-
-
-
-
-
-
+	void print(Node<T>* root);
 };
 
 

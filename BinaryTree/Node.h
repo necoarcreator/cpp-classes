@@ -14,7 +14,7 @@ public:
 	right = new Node<T>();*/
 	Node<T>* left;
 	Node<T>* right;
-	
+
 	Node();
 	Node(T num);
 };
