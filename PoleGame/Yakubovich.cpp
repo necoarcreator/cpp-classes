@@ -1,6 +1,6 @@
 #include <iostream>
-#include <io.h>
-#include <fcntl.h>
+#include <conio.h>
+#include <windows.h>
 #include <string>
 #include <fstream>
 #include <vector>
@@ -53,25 +53,91 @@ void Yakubovich::setPhrases()
 }
 char Yakubovich::getLetter()
 {
+    SetConsoleOutputCP(1251);
     cout << "Enter your guess" << endl;
-    string inpt;
-    cin >> inpt;
+    wstring inpt;
+    wcin >> inpt;
     if (inpt.size() > 1)
     {
         cout << "Insert only one letter!" << endl;
         getLetter();
     }
-
     buk = inpt[0];
-    inpt.clear();
 
     int code = static_cast<int>(buk);
 
-    if (((code < 65) || (code > 90)) && ((code < 97) || (code > 122)))
+    try {
+        string kyr = "ÀÁÂÃÄÅ¨ÆÇÈÉÊËÌÍÎÏĞÑÒÓÔÕÖ×ØÙÚÛÜİŞßàáâãäå¸æçèéêëìíîïğñòóôõö÷øùúûüışÿ";
+        for (auto a : kyr)
+        {
+            if (code == static_cast<int>(a))
+            {
+                throw 1; //kyrillic letters
+            }
+        }
+        if (inpt.length() > 2)
+        {
+            throw 2; //long string
+        }
+        else if (code == 32) //space symbol
+        {
+            throw 3;
+        }
+        else if ((code > 47) && (code < 58))
+        {
+            throw 4; //numbers
+        }
+        else if (((code < 65) || (code > 90)) && ((code < 97) || (code > 122)))
+        {
+            throw "Don't insert non-alphabetic symbols!";    //non-alpha symbols        
+        }
+        else
+        {
+            if (((code > 64) || (code < 91)) && ((code > 96) || (code < 123)))
+            {
+            }
+            else
+            {
+                throw 1.0;
+            }
+        }
+    }
+    catch (const int exeption_num)
     {
-        cout << "Don't insert non-alphabetic symbols!" << endl;
+        if (exeption_num == 1)
+        {
+            cout << "Error code:" << exeption_num << ". You shouldn't kirillic letters" << endl;
+        }
+        else if (exeption_num == 2)
+        {
+            cout << "Error code:" << exeption_num << ". You shouldn't write more than one symbol" << endl;
+        }
+    
+        else if (exeption_num == 3)
+        {
+            cout << "Error code:" << exeption_num << ". You shouldn't tap space" << endl;
+        }
+        else
+        {
+            cout << "Error code:" << exeption_num << ". You shouldn't write numbers" << endl;
+        }
+            
+        getLetter(); //try one more time
+        
+    }
+    catch (const string exeption)
+    {
+        cout << "Error code: 5. " << exeption << endl;
         getLetter();
     }
+    catch (...) //catch-all
+    {
+        cout << "There is an exeption with an undetermined type\n";
+        getLetter();
+    }
+
+
+    inpt.clear();
 
     if (code < 97)
     {
