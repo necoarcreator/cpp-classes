@@ -3,13 +3,12 @@
 #include <minmax.h>
 using namespace std;
 
-//template <class T>
 
 class Crational
 {
 private:
 
-	int num, denom;
+	long long int num, denom;
 
 public:
 
@@ -33,6 +32,19 @@ public:
 
 	float operator*(Crational a);
 
+	float operator-(float b);
+
+	float operator-(Crational b);
+
+	float operator-(int b);
+
+	float operator/(int a);
+
+	float operator/(float a);
+
+	float operator/(Crational a);
+	
+	~Crational();
 };
 
 
