@@ -93,4 +93,22 @@ int main()
 
     reverseTZ<Stack>(B);
 
+    cout << "_______________________\n";
+    cout << "List exeption test : \n";
+
+    List A3;
+    A3.pop();
+
+    cout << "_______________________\n";
+    cout << "Stack exeption test:\n";
+
+    Stack A4;
+    A4.pop();
+
+    cout << "_______________________\n";
+    cout << "Queue exeption test:\n";
+
+    Queue A5;
+    A5.pop();
+
 }

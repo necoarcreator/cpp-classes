@@ -24,9 +24,16 @@ void Stack::push(int arg)
 
 int Stack::pop()
 {
-    if (size == 0)
+    try
     {
-        cout << "Error: no data to delete!\n";
+        if (size == 0)
+        {
+            throw 1;
+        }
+    }
+    catch (const int exp)
+    {
+        cout << "Error: " << exp << ". No data to delete!\n";
         return 0;
     }
     int arg = A[size - 1];

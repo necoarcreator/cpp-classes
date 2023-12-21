@@ -19,8 +19,16 @@ void List::push(int num) {
 
 int List::pop() {
 	int temp;
-	if (tail == NULL) {
-		std::cout << "Impossible to pop!";
+	try
+	{
+		if (tail == NULL) {
+			throw 1;
+		}
+	}
+	catch (const int exp)
+	{
+		cout << "Error: " << exp << ". No data to delete!\n";
+		return 0;
 	}
 	if (head == tail) {
 		temp = tail->val;
