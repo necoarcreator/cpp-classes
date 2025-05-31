@@ -1,5 +1,0 @@
-﻿  Yakubovich.cpp
-C:\Work\cpp_projects\PoleGame\Yakubovich.cpp(65,17): warning C4244: =: преобразование "wchar_t" в "char", возможна потеря данных
-C:\Work\cpp_projects\PoleGame\Yakubovich.cpp(155,19): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-C:\Work\cpp_projects\PoleGame\Yakubovich.cpp(162,19): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-  PoleGame.vcxproj -> C:\Work\cpp_projects\PoleGame\x64\Debug\PoleGame.exe

@@ -1,1 +1,0 @@
-C:\Work\cpp_projects\PoleGame\x64\Debug\PoleGame.exe
