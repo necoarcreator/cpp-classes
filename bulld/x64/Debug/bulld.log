@@ -1,7 +1,0 @@
-﻿  bulld.cpp
-C:\Work\cpp_projects\bulld\bulld.cpp(82,11): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
-C:\Work\cpp_projects\bulld\bulld.cpp(83,11): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
-C:\Work\cpp_projects\bulld\bulld.cpp(84,11): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
-C:\Work\cpp_projects\bulld\bulld.cpp(256,11): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
-C:\Work\cpp_projects\bulld\bulld.cpp(259,11): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
-  bulld.vcxproj -> C:\Work\cpp_projects\bulld\x64\Debug\bulld.exe
