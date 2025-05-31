@@ -1,0 +1,15 @@
+calc "/your mathematical operations/" - standart command to run calculator;
+
+calc /file1/, /file2/ - running calculator using file reading;
+
+calc "/outputfile/" - writing result to a file;
+
+calc -l "/your mathematical operations/" - writing sequence of operations to standart thread;
+
+calc -l "/outputfile/" -  else can be so;
+
+calc -l log /file/ "/your mathematical operations/" - writing sequence of operations to a file;
+
+calc -l log /file/ "/outputfile/"  - else can be so;
+
+-h - writing list of all commands;
