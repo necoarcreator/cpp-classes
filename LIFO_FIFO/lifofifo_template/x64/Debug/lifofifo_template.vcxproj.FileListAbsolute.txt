@@ -1,1 +1,0 @@
-C:\Work\cpp_projects\lifofifo_template\x64\Debug\lifofifo_template.exe
