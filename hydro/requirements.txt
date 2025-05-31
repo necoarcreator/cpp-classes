@@ -1,0 +1,6 @@
+numpy
+matplotlib
+mpi4py
+imageio
+seaborn
+PyYAML
