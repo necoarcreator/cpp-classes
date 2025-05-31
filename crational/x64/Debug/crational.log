@@ -1,4 +1,0 @@
-﻿  main.cpp
-C:\Work\cpp_projects\crational\main.cpp(9,11): warning C4305: инициализация: усечение из "__int64" в "float"
-C:\Work\cpp_projects\crational\main.cpp(9,30): warning C4305: инициализация: усечение из "double" в "float"
-  crational.vcxproj -> C:\Work\cpp_projects\crational\x64\Debug\crational.exe
